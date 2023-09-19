@@ -21,35 +21,33 @@
 
 /* Navigation */
 nav.container {
-  --nav-height: 5rem;
+  --logo-size: 5rem;
 
   margin-top: 1rem !important;
-  height: var(--nav-height);
 }
 
 nav.container > div {
-  position: relative;
-  top: 50%;
-  translate: 0 -50%;
-  vertical-align: center;
+  display: flex;
+  align-items: center;
 }
 
 nav a {
-  vertical-align: middle;
-  text-decoration: none;
   color: var(--text-color);
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-a img {
-  width: var(--nav-height);
-  height: var(--nav-height);
+nav a:not(:first-child) {
+  margin-left: 3rem;
+}
+
+nav a img {
+  width: var(--logo-size);
+  height: var(--logo-size);
 }
 
 .nav-right {
-  float: right;
-  display: flex;
-  justify-content: space-between;
-  height: var(--nav-height);
+  margin-left: auto !important;
 }
 
 .nav-right > * {

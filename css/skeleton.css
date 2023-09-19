@@ -73,6 +73,8 @@
   .eleven.columns                 { width: 91.3333333333%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
 
+  .one-and-a-half.columns         {width: 8.999999999999%; }
+
   .one-third.column               { width: 30.6666666667%; }
   .two-thirds.column              { width: 65.3333333333%; }
 
