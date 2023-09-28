@@ -5,6 +5,7 @@
 
   --contrast-text-color: rgb(50, 52, 52);
   --contrast-text-color-light: rgb(70, 72, 72);
+  --contrast-text-color-dark: rgb(29, 30, 30);
 
   --accent-color: #0087f3;
   --accent-color-light: #1694ff;
@@ -112,4 +113,19 @@ video {
 
 .reviews label {
   display: inline;
+}
+
+/* Advantages */
+
+.advantages {
+  background-color: var(--contrast-text-color-dark);
+}
+
+.advantages .row:not(:first-child) {
+  text-align: center;
+}
+
+.advantages img {
+  width: 8rem;
+  height: 8rem;
 }

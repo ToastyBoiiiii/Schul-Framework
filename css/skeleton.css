@@ -326,7 +326,6 @@ input[type="radio"], input[type="radio"] + span {
 input[type="radio"] {
   position: absolute;
   opacity: 0;
-  cursor: pointer;
   height: var(--radio-size);
   width: var(--radio-size);
 }
@@ -342,6 +341,7 @@ input[type="radio"] + span {
 /* Hover Radio */
 input[type="radio"] + span:hover {
   border-color: var(--text-color);
+  cursor: pointer;
 }
 /* Check radio */
 input[type="radio"]:checked + span {
