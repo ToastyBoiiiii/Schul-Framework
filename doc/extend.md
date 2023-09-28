@@ -538,7 +538,7 @@ Though the dimensions of the icon can vary between iOS devices and versions one
 
 ```html
 
-<link rel="apple-touch-icon" href="../assets/images/icon/icon.png">
+<link rel="apple-touch-icon" href="../assets/images/icon/mixerIcon.svg">
 ```
 
 For a more comprehensive overview, please refer to Mathias' [article on Touch
