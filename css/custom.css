@@ -5,7 +5,6 @@
 
   --contrast-text-color: rgb(50, 52, 52);
   --contrast-text-color-light: rgb(70, 72, 72);
-  --contrast-text-color-dark: rgb(29, 30, 30);
 
   --accent-color: #0087f3;
   --accent-color-light: #1694ff;
@@ -19,6 +18,91 @@
 
 body {
   background-color: var(--contrast-text-color);
+}
+
+small {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h3, h4, h5 {
+  margin-bottom: 0.5rem;
+}
+
+q {
+  display: block;
+  font-size: 2.5rem;
+  padding: 2rem 0 0.5rem 0;
+}
+
+q + small {
+  color: var(--text-color-dark);
+}
+
+/* Buttons */
+
+button {
+  border-radius: 1.5rem;
+  padding: 0 1rem;
+  transition: 0.3s;
+}
+
+button.active {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+button.active:hover {
+  background-color: var(--accent-color-dark);
+  color: var(--text-color);
+}
+
+button.active:focus {
+  background-color: var(--accent-color-light);
+  color: var(--text-color);
+}
+
+/* Radio Buttons */
+
+input[type="radio"], input[type="radio"] + span {
+  --radio-size: 0.7rem;
+  --radio-border: 0.1rem;
+}
+
+/* Hide radio button */
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: var(--radio-size);
+  width: var(--radio-size);
+}
+
+/* Style span element */
+input[type="radio"] + span {
+  display: inline-block;
+  height: var(--radio-size);
+  width: var(--radio-size);
+  border: var(--radio-border) solid var(--text-color-dark);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Hover Radio */
+input[type="radio"] + span:hover {
+  border-color: var(--text-color);
+}
+
+/* Check radio */
+input[type="radio"]:checked + span {
+  border-color: rgba(0, 0, 0, 0);
+  background-color: var(--accent-color);
+}
+
+/* Hover checked Radio*/
+input[type="radio"]:checked:hover + span {
+  background-color: var(--accent-color-light);
 }
 
 /* --- Sections --- */
@@ -113,19 +197,4 @@ video {
 
 .reviews label {
   display: inline;
-}
-
-/* Advantages */
-
-.advantages {
-  background-color: var(--contrast-text-color-dark);
-}
-
-.advantages .row:not(:first-child) {
-  text-align: center;
-}
-
-.advantages img {
-  width: 8rem;
-  height: 8rem;
 }
