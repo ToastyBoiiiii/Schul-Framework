@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: var(--contrast-text-color);
 }
 
 small {
@@ -106,7 +106,7 @@ input[type="radio"]:checked:hover + span {
 }
 
 /* --- Sections --- */
-section {
+.section, section {
   padding: 8rem 0 7rem;
   color: var(--text-color);
 }
