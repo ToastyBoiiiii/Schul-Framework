@@ -1,0 +1,131 @@
+/* Variables */
+:root {
+  --text-color: rgb(247, 249, 253);
+  --text-color-dark: rgb(125, 128, 128);
+
+  --contrast-text-color: rgb(50, 52, 52);
+  --contrast-text-color-light: rgb(70, 72, 72);
+  --contrast-text-color-dark: rgb(29, 30, 30);
+
+  --accent-color: #0087f3;
+  --accent-color-light: #1694ff;
+  --accent-color-dark: #007fe7;
+}
+
+/* --- General --- */
+* {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #000;
+}
+
+/* --- Sections --- */
+section {
+  padding: 8rem 0 7rem;
+  color: var(--text-color);
+}
+
+.section-heading, .section-description {
+  margin-bottom: 1.2rem;
+}
+
+/* Navigation */
+nav.container {
+  --logo-size: 5rem;
+
+  margin-top: 1rem !important;
+}
+
+nav.container > div {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:not(:first-child) {
+  margin-left: 3rem;
+}
+
+nav a img {
+  width: var(--logo-size);
+  height: var(--logo-size);
+}
+
+.nav-right {
+  margin-left: auto !important;
+}
+
+.nav-right > * {
+  width: auto;
+}
+
+/* Hero */
+.hero {
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+video {
+  position: absolute;
+  object-fit: cover;
+  filter: brightness(40%);
+  z-index: -1;
+  background-color: #000;
+}
+
+/* Tab */
+
+.tab {
+  background-color: #fff;
+  padding: 5rem 0;
+  color: var(--contrast-text-color);
+}
+
+.tab > .container:first-child {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Reviews */
+
+.reviews {
+  padding-top: 28rem;
+  padding-bottom: 10rem;
+  background-image: url("../assets/images/reviewsBackground.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.reviews small:first-child {
+  color: var(--text-color);
+  text-shadow: 0 0 3px var(--contrast-text-color);
+}
+
+.reviews label {
+  display: inline;
+}
+
+/* Advantages */
+
+.advantages {
+  background-color: var(--contrast-text-color-dark);
+}
+
+.advantages .row:not(:first-child) {
+  text-align: center;
+}
+
+.advantages img {
+  width: 8rem;
+  height: 8rem;
+}
