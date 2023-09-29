@@ -480,6 +480,25 @@ there.
 /* Larger than tablet */
 @media (min-width: 750px) {}
 
+/* Imprint */
+@media (max-width: 868px) {
+  footer .one-half {
+    width: 100% !important;
+  }
+
+  footer .four {
+    width: 29%;
+    margin-left: 4%;
+  }
+}
+
+/* Image in Tab Section */
+@media (max-width: 910px) {
+  .tab > .container > .row > .one-half {
+    width: 100%;
+  }
+}
+
 /* Larger than desktop */
 @media (min-width: 1000px) {}
 
