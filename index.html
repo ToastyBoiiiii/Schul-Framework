@@ -3,7 +3,7 @@
   <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>Landing Page</title>
+    <title>Mixer - Landing Page</title>
     <meta name="description" content="Landing Page for imaginary Company">
     <meta name="author" content="Hannes Leonhartsberger, Richard Waglechner">
 
@@ -20,14 +20,15 @@
     <script src="js/main.js" defer></script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/icon/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="assets/images/icon/mixerIcon.svg"/>
+
   </head>
   <body>
     <video onloadstart="this.playbackRate = 0.7;" class="section hero" autoplay loop muted poster="assets/images/hero-poster.jpg" src="assets/videos/hero.mp4"></video>
-    <section class="hero">
+    <header class="hero"> <!-- --- Hero Section --- -->
       <nav class="container">
         <div class="row">
-            <a href=""><img src="assets/images/svg/blender.svg" alt="Logo"/> Mixer</a>
+            <a href=""><img src="assets/images/svg/mixer.svg" alt="Logo"/> Mixer</a>
             <a class="nav-right" href="">Docs</a>
             <a href="">Download</a>
             <a href="">About</a>
@@ -36,21 +37,26 @@
       <div class="container">
         <div class="row">
           <div class="one-half column" style="margin-top: 25%">
+            <small>Intro</small>
             <h4>Mixer</h4>
             <p>With its lightning-fast rendering capabilities and intuitive interface, Mixer makes bringing your ideas to life easier than ever before</p>
+            <button class="active">Learn more</button>
           </div>
         </div>
       </div>
-    </section>
-    <section class="tab">
+    </header>
+    <section class="tab"> <!-- --- Tab Section --- -->
       <div class="container">
-        <button class="active"> Text </button>
-        <button> Text </button>
-        <button> Text </button>
+        <button class="active">Text</button>
+        <button>Text</button>
+        <button>Text</button>
       </div>
-      <div class="container">
+      <article class="container">
         <div class="row">
-          <div class="one-half column" style="float: right;">
+          <figure class="one-half column">
+            <img src="assets/images/mixerV1.8.png" alt="Image of our Mixer Product">
+          </figure>
+          <div class="one-half column">
             <small>Lorem ipsum</small>
             <h4>Lorem ipsum dolor sit amet</h4>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -68,9 +74,9 @@
           </div>
           </div>
         </div>
-      </div>
+      </article>
     </section>
-    <section class="reviews">
+    <section class="reviews"> <!-- --- Reviews Section --- -->
       <div class="container">
         <div class="row">
           <div class="one-half column" style="float: right;">
@@ -78,14 +84,14 @@
             <q>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy. And I am currently doing</q>
             <small>Your Mom, 28.09.2023</small>
             <br>
-            <label><input type="radio" name="review"><span></span></label>
+            <label><input type="radio" name="review" checked><span></span></label>
             <label><input type="radio" name="review"><span></span></label>
             <label><input type="radio" name="review"><span></span></label>
           </div>
         </div>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages"> <!-- --- Advantages Section --- -->
       <div class="container">
         <div class="row">
           <small>Advantages</small>
@@ -116,8 +122,8 @@
           </div>
           <div class="four columns">
             <img src="assets/images/svg/stars.svg" alt="Stars">
-            <h5>Lorem Ipsum</h5>
-            <p></p>
+            <h5>AI</h5>
+            <p>With our new patent pending AI scene modeler you can make any imagination reality with just the click of a button</p>
           </div>
           <div class="four columns">
             <img src="assets/images/svg/shield.svg" alt="Striked through shield">
@@ -127,5 +133,40 @@
         </div>
       </div>
     </section>
+    <footer class="section"> <!-- --- Imprint Section --- -->
+      <div class="container">
+        <div class="row">
+          <div class="one-half column">
+            <h5>Our Company</h5>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est <a href="/">info@company.at</a></p>
+          </div>
+          <div class="one-half column">
+            <div class="row">
+              <div class="four columns">
+                <h5>Products</h5>
+                <a href="/">Mixer</a><br>
+                <a href="/">Real Engine</a><br>
+                <a href="/">Photomarket</a><br>
+                <a href="/">Premier Lite</a>
+              </div>
+              <div class="four columns">
+                <h5>Our Company</h5>
+                <a href="/">Linked-In</a><br>
+                <a href="/">X</a><br>
+                <a href="/">Vine</a><br>
+                <a href="/">E-Mail</a>
+              </div>
+              <div class="four columns">
+                <h5>Our Offices</h5>
+                <a href="/">Austria</a><br>
+                <a href="/">Germany</a><br>
+                <a href="/">Britain</a><br>
+                <a href="/">Russia</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

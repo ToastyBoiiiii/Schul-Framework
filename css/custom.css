@@ -15,14 +15,15 @@
 /* --- General --- */
 * {
   overflow-x: hidden;
+  transition: 0.3s;
 }
 
 body {
-  background-color: #000;
+  background-color: var(--contrast-text-color);
 }
 
 /* --- Sections --- */
-section {
+.section, section {
   padding: 8rem 0 7rem;
   color: var(--text-color);
 }
@@ -68,10 +69,11 @@ nav a img {
 
 /* Hero */
 .hero {
+  transition: unset;
   padding: 0;
   width: 100vw;
   height: 100vh;
-  text-align: center;
+  color: var(--text-color);
 }
 
 video {
@@ -93,6 +95,21 @@ video {
 .tab > .container:first-child {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.tab img {
+  object-fit: cover;
+  width: 98%;
+  padding: 3px;
+  border: 1px solid var(--text-color-dark);
+  border-radius: 2% / 4%;
+}
+
+.tab div:has(> img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 /* Reviews */
@@ -128,4 +145,26 @@ video {
 .advantages img {
   width: 8rem;
   height: 8rem;
+}
+
+/* Imprint */
+
+footer {
+  background-color: var(--contrast-text-color-dark);
+  font-size: 1.3rem;
+}
+
+footer h5 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+footer p > a {
+  font-weight: bold;
+}
+
+footer p, footer a {
+  color: var(--text-color-dark);
+  text-decoration: none;
 }
