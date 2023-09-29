@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   --text-color: rgb(247, 249, 253);
+  --text-color-light: rgb(213, 218, 218);
   --text-color-dark: rgb(125, 128, 128);
 
   --contrast-text-color: rgb(50, 52, 52);

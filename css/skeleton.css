@@ -245,6 +245,10 @@ input[type="reset"].active:focus,
 input[type="button"].active:focus {
   background-color: var(--accent-color-light);
   color: var(--text-color); }
+button.white {
+  background-color: var(--text-color); }
+button.white:focus, button.white:hover {
+  background-color: var(--text-color-light); }
 
 
 /* Forms
@@ -415,6 +419,8 @@ ul,
 ol,
 form {
   margin-bottom: 2.5rem; }
+figure {
+  margin: unset; }
 
 
 /* Utilities
