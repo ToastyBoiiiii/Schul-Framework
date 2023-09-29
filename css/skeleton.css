@@ -205,7 +205,7 @@ input[type="button"] {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 1.5rem;
+  border-radius: 2rem / 2rem;
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
@@ -223,35 +223,26 @@ input[type="button"]:focus {
   color: #333;
   border-color: #888;
   outline: 0; }
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
-.button.button-primary:hover,
-button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
-
-button.active {
+.button.active,
+button.active,
+input[type="submit"].active,
+input[type="reset"].active,
+input[type="button"].active {
   background-color: var(--accent-color);
-  color: var(--text-color); }
-button.active:hover {
+  color: var(--text-color);
+  border: unset; }
+.button.active:hover,
+button.active:hover,
+input[type="submit"].active:hover,
+input[type="reset"].active:hover,
+input[type="button"].active:hover {
   background-color: var(--accent-color-dark);
   color: var(--text-color); }
-button.active:focus {
+.button.active:focus,
+button.active:focus,
+input[type="submit"].active:focus,
+input[type="reset"].active:focus,
+input[type="button"].active:focus {
   background-color: var(--accent-color-light);
   color: var(--text-color); }
 
