@@ -148,6 +148,17 @@ video {
   height: 8rem;
 }
 
+/* Bugs */
+.bug input:not([type="submit"]), .bug textarea {
+  width: 100%;
+  color: var(--contrast-text-color);
+}
+
+.bug textarea {
+  resize: none;
+  height: 9rem;
+}
+
 /* Imprint */
 
 footer {
