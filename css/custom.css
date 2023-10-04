@@ -177,7 +177,7 @@ footer p > a {
 }
 
 footer p, footer a {
-  color: var(--text-color-dark);
+  color: var(--text-color-light);
   text-decoration: none;
 }
 
