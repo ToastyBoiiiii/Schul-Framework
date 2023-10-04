@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   --text-color: rgb(247, 249, 253);
+  --text-color-light: rgb(213, 218, 218);
   --text-color-dark: rgb(125, 128, 128);
 
   --contrast-text-color: rgb(50, 52, 52);
@@ -147,6 +148,17 @@ video {
   height: 8rem;
 }
 
+/* Bugs */
+.bug input:not([type="submit"]), .bug textarea {
+  width: 100%;
+  color: var(--contrast-text-color);
+}
+
+.bug textarea {
+  resize: none;
+  height: 9rem;
+}
+
 /* Imprint */
 
 footer {
@@ -165,6 +177,56 @@ footer p > a {
 }
 
 footer p, footer a {
-  color: var(--text-color-dark);
+  color: var(--text-color-light);
   text-decoration: none;
+}
+
+/* Page Reveal Effect */
+
+@keyframes navBarAnimation {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: -6rem;
+  }
+  90% {
+    opacity: 0;
+    position: relative;
+    top: -6rem;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}  @keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes videoAnimation {
+  0% {
+    filter: brightness(20%);
+  }
+  100% {
+    filter: brightness(40%);
+  }
+}
+
+nav {
+  animation: 1.5s ease-out 0s 1 navBarAnimation;
+}
+
+.hero small, .hero h4, .hero p, .hero button {
+  animation: 2s ease-out 0s 1 opacityAnimation;
+}
+
+video.hero {
+  animation: 2s ease-out 0s 1 videoAnimation;
 }
